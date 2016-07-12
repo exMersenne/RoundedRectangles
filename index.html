@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<body>
-<script src="//d3js.org/d3.v3.min.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Erf Xi Mersenne • A-Frame • D3</title>
+    <meta name="description" content="• Using A-Frame and D3 for Portfolio">
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="../../../dist/aframe.js"></script>
+   <script src="//d3js.org/d3.v3.min.js"></script>
+  </head>
+<body> 
+<a-scene>
+</a-scene>
 <script>
 var mouse = [480, 250],
     count = 0;
@@ -40,7 +49,11 @@ d3.timer(function() {
     d.center[1] += (mouse[1] - d.center[1]) / (i + 5);
     d.angle += Math.sin((count + i) / 10) * 7;
     return "translate(" + d.center + ")rotate(" + d.angle + ")";
-  });
+  }); 
+  
+  </a-scene>
+  </body>
+</html>
 });
 
 </script>
